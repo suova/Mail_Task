@@ -1,12 +1,30 @@
-#                                                      Mail Task
-Test task for solution developer
+##                                               Mail Task
+___
+
+###### Test task for tarantool solution developer:
+ *Key-value store via http* 
 
 
-## API
-Path | Method | Body (json) | Description
+#### API
+ Method | Path | Body  | Specification
 --- | --- | --- | --- 
-/kv | POST | ```{"key": "Your key", "value": ...your object...} ``` | Add a new pair if key was not in the database
-/kv/:key | GET |  | Select pair by key and return result
-/kv/:key | DELETE | | Delete pair if key was in the database
-/kv/:key | PUT | ```{ "value": ...your new object...} ``` | Update new pair if the key was in the database
-/info/kv/all_records | GET |  | Return all pairs in database
+ POST |/kv | ```{key: "test", "value": {SOME ARBITRARY JSON}}  ``` | Add data if key does't exist in the database
+PUT |  /kv/:key{id} | ```{"value": {SOME ARBITRARY JSON}} ``` | Update data if key is in the database
+GET | /kv/:key{id} |  | Get data by key 
+DELETE | /kv/:key{id} | | Delete data if key is in the database
+
+#### Codes
+Code | Method | Specification
+--- | --- | --- 
+400|POST| If key already exist
+409|POST, PUT| Body invalid
+404|PUT GET DELETE| Key does not exist
+200, 201| | all 
+*Everything is logging*
+
+#### Uses
++ Tarantool
++ Lua
++ Python3
+
+
