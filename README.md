@@ -1,7 +1,7 @@
 ##                                               Mail Task
-___
 
-###### Test task for tarantool solution developer:
+
+##### Test task for tarantool solution developer:
  *Key-value store via http* 
  
  #### Uses
