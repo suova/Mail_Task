@@ -19,12 +19,12 @@ GET | /kv/:key{id} |  | Get data by key
 DELETE | /kv/:key{id} | | Delete data if key is in the database
 
 #### Codes
-Code | Method | Specification
+Code | Methods | Specification
 --- | --- | --- 
 400|POST| If key already exist
 409|POST, PUT| Body invalid
 404|PUT GET DELETE| Key does not exist
-200, 201| | all good
+200, 201| | All good
 
 *Everything is logging*
 
