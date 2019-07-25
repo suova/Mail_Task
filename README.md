@@ -1,4 +1,4 @@
-# |:centered        :|Mail Task
+#                                                      Mail Task
 Test task for solution developer
 
 
