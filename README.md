@@ -3,6 +3,11 @@ ___
 
 ###### Test task for tarantool solution developer:
  *Key-value store via http* 
+ 
+ #### Uses
++ Tarantool
++ Lua
++ Python3
 
 
 #### API
@@ -19,12 +24,10 @@ Code | Method | Specification
 400|POST| If key already exist
 409|POST, PUT| Body invalid
 404|PUT GET DELETE| Key does not exist
-200, 201| | all 
+200, 201| | all good
+
 *Everything is logging*
 
-#### Uses
-+ Tarantool
-+ Lua
-+ Python3
+
 
 
